@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+    {% block body %}
+
+        {% if parametro1 == 1 %}
+        <h1>Variable es 1</h1>
+        {% else %}
+        <h1>No lo es</h1>
+        {% endif %}
+
+        {% for n in parametro2 %}
+        <h1>Variable {{n}}</h1>
+        {% endfor %}
+
+    {% endblock %}

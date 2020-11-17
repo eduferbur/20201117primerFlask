@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+    {% block body %}
+
+<form action="{{ url_for('htmlDinamicaPOST') }}" method="post">
+    <input type="texto" name="nombreEscrito" placeholder="Ingresa un nombre">
+    <button>Enviar</button>  <!-- texto dentro del botón "Enviar   -->
+</form>
+
+
+    {% endblock %}
